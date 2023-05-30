@@ -1,0 +1,15 @@
+\begin{lstlisting}
+> x <- 1:50
+> y <- 8+ .5 * x + rnorm(50,sd=3)
+
+> vcov(lm(y~x))
+            (Intercept)             x
+(Intercept)  0.69874415 -0.0207547766
+x           -0.02075478  0.0008139128
+
+> xtilde <- x - mean(x)
+
+> sum(resid(lm(y~x))^2)/48 / xtilde%*%xtilde
+             [,1]
+[1,] 0.0008139128
+   \end{lstlisting}
