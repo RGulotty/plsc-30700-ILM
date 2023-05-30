@@ -1578,61 +1578,61 @@ $$E[price_{USA}]=\frac{1}{2}10,000+\frac{1}{2}0=5,000$$
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Next Steps}
-\begin{itemize}
-\item Read and work through "Estimators1", "Estimators2", "Estimators3.pdf"
-\item Finish working through "Proofsadvice.pdf"
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Law of Total Variance}
-Suppose $X$ and $Y$ are random variables.  Then 
-
-\begin{align*}
-var[X] &= E[var[X|Y]]+var(E[X|Y])  
-\end{align*}
-The first term is the average of the variation for each value of Y.\pause
-The second term is the variation across the averages within each value of Y.
-\end{frame}
-
-\section{Stats}
-
-\begin{frame}
-\frametitle{Estimators}
-\begin{itemize}
-\item We observe realizations from a vector of random variables $\boldsymbol{x}=(x_1, x_2 \ldots x_n)$. \pause
-\item When we construct a function $z(\boldsymbol{x})$ of observed data, they are called `statistics'. \pause  
-\item If that function is used to infer the value of a parameter of a distribution, it is called an `estimator'.\pause
-\item All estimators are random variables with distributions.\pause
-\begin{itemize}
-\item $\bar{x}(\boldsymbol{x})=\frac{\sum x_i }{n}$ is the sample mean and estimates the true mean ($\mu$). \pause
-\item $s^2(\boldsymbol{x})=\frac{\sum (x_i-\bar{x})^2 }{n-1}$ is the sample variance and estimates  the true variance ($\sigma^2$).\\ \pause
-\end{itemize}
-\item An estimator $\hat{\theta}$ is evaluated by its expectation and variance.
-\begin{itemize}
-\item Is $E(\hat{\theta})-\theta=0$?  If so, it is called unbiased.
-\item Is $var(\hat{\theta})\leq var(\tilde{\theta})$, where $\tilde{\theta}$ is any other unbiased estimator?  If so, it is called efficient.
-\item How does $\hat{\theta}_n$ behave as $n$ gets arbitrarily large? Next time. 
-\end{itemize}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Preview: Sample Mean is unbiased}
-\begin{itemize}
-\item If $\boldsymbol{x}=(x_1, x_2 \ldots x_n)$ are a iid random sample drawn from some distribution with mean $\mu$, and we calculate $\bar{x}(\boldsymbol{x})=\frac{1}{N}\sum_{i=1}^N x_i$, we can show that $E[\bar{x}]-\mu=0$:
-\begin{align*}
-E[\bar{x}(\boldsymbol{x})]&=E[\frac{1}{N}\sum_{i=1}^N x_i]\\
-&=\frac{1}{N}[\sum_{i=1}^N E[x_i]]\\
-&=\frac{1}{N}[\sum_{i=1}^N \mu]\\
-&=\frac{1}{N}[N \mu]\\
-&=\mu
-\end{align*}
-\end{itemize}
-\end{frame}
+%
+%\begin{frame}
+%\frametitle{Next Steps}
+%\begin{itemize}
+%\item Read and work through "Estimators1", "Estimators2", "Estimators3.pdf"
+%\item Finish working through "Proofsadvice.pdf"
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Law of Total Variance}
+%Suppose $X$ and $Y$ are random variables.  Then 
+%
+%\begin{align*}
+%var[X] &= E[var[X|Y]]+var(E[X|Y])  
+%\end{align*}
+%The first term is the average of the variation for each value of Y.\pause
+%The second term is the variation across the averages within each value of Y.
+%\end{frame}
+%
+%\section{Stats}
+%
+%\begin{frame}
+%\frametitle{Estimators}
+%\begin{itemize}
+%\item We observe realizations from a vector of random variables $\boldsymbol{x}=(x_1, x_2 \ldots x_n)$. \pause
+%\item When we construct a function $z(\boldsymbol{x})$ of observed data, they are called `statistics'. \pause  
+%\item If that function is used to infer the value of a parameter of a distribution, it is called an `estimator'.\pause
+%\item All estimators are random variables with distributions.\pause
+%\begin{itemize}
+%\item $\bar{x}(\boldsymbol{x})=\frac{\sum x_i }{n}$ is the sample mean and estimates the true mean ($\mu$). \pause
+%\item $s^2(\boldsymbol{x})=\frac{\sum (x_i-\bar{x})^2 }{n-1}$ is the sample variance and estimates  the true variance ($\sigma^2$).\\ \pause
+%\end{itemize}
+%\item An estimator $\hat{\theta}$ is evaluated by its expectation and variance.
+%\begin{itemize}
+%\item Is $E(\hat{\theta})-\theta=0$?  If so, it is called unbiased.
+%\item Is $var(\hat{\theta})\leq var(\tilde{\theta})$, where $\tilde{\theta}$ is any other unbiased estimator?  If so, it is called efficient.
+%\item How does $\hat{\theta}_n$ behave as $n$ gets arbitrarily large? Next time. 
+%\end{itemize}
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{Preview: Sample Mean is unbiased}
+%\begin{itemize}
+%\item If $\boldsymbol{x}=(x_1, x_2 \ldots x_n)$ are a iid random sample drawn from some distribution with mean $\mu$, and we calculate $\bar{x}(\boldsymbol{x})=\frac{1}{N}\sum_{i=1}^N x_i$, we can show that $E[\bar{x}]-\mu=0$:
+%\begin{align*}
+%E[\bar{x}(\boldsymbol{x})]&=E[\frac{1}{N}\sum_{i=1}^N x_i]\\
+%&=\frac{1}{N}[\sum_{i=1}^N E[x_i]]\\
+%&=\frac{1}{N}[\sum_{i=1}^N \mu]\\
+%&=\frac{1}{N}[N \mu]\\
+%&=\mu
+%\end{align*}
+%\end{itemize}
+%\end{frame}
 
 
 \end{document}
